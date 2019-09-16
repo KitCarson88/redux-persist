@@ -1,13 +1,13 @@
 declare module "redux-persist/integration/react" {
-  import { ReactNode, PureComponent } from "react";
+  //import { ReactNode, PureComponent } from "react";
   import { Persistor } from "redux-persist/es/types";
 
   /** @see PersistGate */
   interface PersistGateProps {
     persistor: Persistor;
     onBeforeLift?(): void | Promise<void>;
-    children?: ReactNode | ((bootstrapped: boolean) => ReactNode);
-    loading?: ReactNode;
+    //children?: ReactNode | ((bootstrapped: boolean) => ReactNode);
+    //loading?: ReactNode;
   }
 
   /** @see PersistGate */
@@ -21,7 +21,7 @@ declare module "redux-persist/integration/react" {
    * @see PersistGateProps
    * @see PersistGateState
    */
-  class PersistGate extends React.PureComponent<PersistGateProps, PersistorGateState> {}
+  //class PersistGate extends React.PureComponent<PersistGateProps, PersistorGateState> {}
 }
 
 declare module "redux-persist/es/integration/react" {
